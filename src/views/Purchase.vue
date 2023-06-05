@@ -59,19 +59,13 @@ button {
   justify-content: center;
   height: 50px;
   left: 620px;
-
-  background-color: rgb(253, 253, 253);
   padding: 7px;
 }
 
 .tiles {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  background-image: linear-gradient(
-    /* 90deg, */ #020024 0%,
-    #090979 35%,
-    #00d4ff 100%
-  );
+  background-color: black;
 }
 
 img {

@@ -19,7 +19,7 @@ const login = () => {
 <template>
   <div class="login">
     <div class="comp">
-      <h1>Soap2Morrow</h1>
+      <h1>Joe Movies</h1>
       <h3>Buy the Latest Collections</h3>
     </div>
 

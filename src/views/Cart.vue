@@ -7,14 +7,8 @@ const store = useStore();
 <template>
   <div>
     <div class="top">
-    <h1>Joes Movies</h1>
+    <h1>Joe's Movies</h1>
     <h3>Purchases</h3>
-    </div>
-  </div>
-  <div class="buy">
-    <div v-for="movie in store.cart">
-    <h1>{{ movie.title }}</h1>
-    <img :src="`https://image.tmdb.org/t/p/w500/${movie.poster}`" />
     </div>
   </div>
   <div v-for="movie in store.cart">
@@ -28,22 +22,21 @@ img {
   height: 20rem;
 }
 
+#bodyCart {
+  background-color: black;
+}
 .buy {
   display: grid;
   position: relative;
   color: whitesmoke;
   grid-template-columns: repeat(5, 1fr);
-  /* left: 100px; */
-  background-image: linear-gradient(
-    /* 90deg, */ #020024 0%,
-    #090979 35%,
-    #00d4ff 100%
-  );
+  left: 100px;
+  background-color: black;;
 }
 
 .top {
   text-align: center;
-  color: aliceblue;
-  background-color: rgb(6, 86, 140);
+  color: orange;
+  background-color: black;
 }
 </style>

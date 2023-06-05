@@ -32,5 +32,4 @@ store.movies = movies.results.map((movie) => {
     <Footer />
   </div>
 </template>
-
 <style scoped></style>
