@@ -8,7 +8,7 @@ const store = useStore();
   <div>
     <div class="top">
     <h1>Joe's Movies</h1>
-    <h3>Purchases</h3>
+    <h3>Your Cart</h3>
     </div>
   </div>
   <div v-for="movie in store.cart">

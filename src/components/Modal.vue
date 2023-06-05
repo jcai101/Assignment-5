@@ -32,14 +32,10 @@ const props = defineProps(["id"]);
             <h1>{{ movie.title }}</h1>
             <h2>{{ movie.tagline }}</h2>
             <h2>Release Date: {{ movie.release_date }}</h2>
-            <h2>Duration: {{ movie.runtime }} mins</h2>
-            <h2>{{ movie.genres[0].name }}</h2>
-            <h2>Rating: {{ movie.vote_average }}</h2>
-            <h2>Rotten tomatoes: {{ movie.vote_count }}</h2>            
-            <h3>{{ movie.overview }}</h3>
+            <h2>Duration: {{ movie.runtime }} mins</h2>           
 
             <h3
-              class="but"
+              class= "buton"
               @click="store.addToCart(movie.poster_path, movie.title)"
             >
               Buy
@@ -58,8 +54,8 @@ const props = defineProps(["id"]);
   size: 100px;
 }
 .info {
-  width: 60%;
-  position: relative;
+  width: 45vw;
+  position:relative;
   font-size: small;
   display: flex;
   flex-direction: column;
@@ -101,6 +97,20 @@ const props = defineProps(["id"]);
 }
 
 img {
-  width: 200px;
+  width: 20vw;;
+  height: 60vh;
 }
+
+button {
+  cursor: pointer;
+  border: 1;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 150px;
+  padding: 12px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  transition: 0.5s;
+}
+
 </style>
