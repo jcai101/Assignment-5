@@ -9,6 +9,12 @@
     <div class="links">
       <a href="">FAQ</a>
       <a href="">Help Center</a>
+      <a href=""></a>
+      <a href="">Help Center</a>
+      <a href="">Help Center</a>
+      <a href="">Help Center</a>
+      <a href="">Help Center</a>
+      <a href="">Help Center</a>
     </div>
   </div>
 </template>
@@ -26,18 +32,18 @@
   font-size: 12px;
 }
 .footer {
-  color: aliceblue;
+  color: orange;
   display: grid;
   justify-content: center;
 
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   width: 100vw;
   height: 45vh;
 }
 a {
-  color: rgb(251, 250, 246);
+  color: white;
 }
 a:link {
-  text-decoration: none;
+  text-decoration:double;
 }
 </style>

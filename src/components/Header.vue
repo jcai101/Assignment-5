@@ -6,7 +6,7 @@ const router = useRouter();
 
 <template>
   <div class="header-container">
-    <h1>Soap2Morrow</h1>
+    <h1>Jone's Barbeque and foot massage + Movies</h1>
   </div>
   <div class="login">
     <button @click="router.push('/login')">Login</button>
