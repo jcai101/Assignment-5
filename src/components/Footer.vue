@@ -3,18 +3,18 @@
 <template>
   <div class="footer">
     <div class="number">
-      <p>Need Help? Call 1-800-668-6868 (Kids help phone)</p>
+      <p>Need Help? Call 1-800-668-6868</p>
     </div>
 
     <div class="links">
       <a href="">FAQ</a>
       <a href="">Help Center</a>
-      <a href=""></a>
-      <a href="">Help Center</a>
-      <a href="">Help Center</a>
-      <a href="">Help Center</a>
-      <a href="">Help Center</a>
-      <a href="">Help Center</a>
+      <a href="">Privacy Policy</a>
+      <a href="">Sitemap</a>
+      <a href="">Follow us on Twitter!</a>
+      <a href="">Follow us on Instagram!</a>
+      <a href="">Follow us on Linkedin!</a>
+      <a href="">Free Massage</a>
     </div>
   </div>
 </template>
@@ -35,9 +35,8 @@
   color: orange;
   display: grid;
   justify-content: center;
-
   background-color: black;
-  width: 100vw;
+  width:97.3vw;
   height: 45vh;
 }
 a {
@@ -45,5 +44,6 @@ a {
 }
 a:link {
   text-decoration:double;
+  position: inherit;
 }
 </style>

@@ -6,7 +6,7 @@ const router = useRouter();
 
 <template>
   <div class="header-container">
-    <h1>Jone's Barbeque and foot massage + Movies</h1>
+    <h1>Joe's Movies</h1>
   </div>
   <div class="login">
     <button @click="router.push('/login')">Login</button>
@@ -18,12 +18,14 @@ const router = useRouter();
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
+  color: whitesmoke;
 }
 .login {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   height: 50px;
-  background-color: rgb(255, 255, 255);
+  background-color: black;
   padding: 5px;
 }
 button {

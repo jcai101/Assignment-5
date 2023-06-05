@@ -24,13 +24,20 @@ const props = defineProps(["id"]);
         <button @click="$emit('toggleModal')">X</button>
         <div v-if="movie">
           <img :src="`https://image.tmdb.org/t/p/w500/${movie.poster_path}`" />
-          <div class="title">
-            <h1>{{ movie.title }}</h1>
-          </div>
 
           <div class="info">
-            <h2>{{ movie.release_date }}</h2>
-            <h2>{{ movie.overview }}</h2>
+            <br />
+            <br />
+            <br />
+            <h1>{{ movie.title }}</h1>
+            <h2>{{ movie.tagline }}</h2>
+            <h2>Release Date: {{ movie.release_date }}</h2>
+            <h2>Duration: {{ movie.runtime }} mins</h2>
+            <h2>{{ movie.genres[0].name }}</h2>
+            <h2>Rating: {{ movie.vote_average }}</h2>
+            <h2>Rotten tomatoes: {{ movie.vote_count }}</h2>            
+            <h3>{{ movie.overview }}</h3>
+
             <h3
               class="but"
               @click="store.addToCart(movie.poster_path, movie.title)"
@@ -47,7 +54,8 @@ const props = defineProps(["id"]);
 <style scoped>
 .title {
   position: relative;
-  left: 50%;
+  left: 40%;
+  size: 100px;
 }
 .info {
   width: 60%;
@@ -71,10 +79,10 @@ const props = defineProps(["id"]);
 }
 
 .modal-outer-container .modal-inner-container {
-  background-color: #205176;
+  background-color: orange;
   border-radius: 20px;
   width: clamp(280px, 100%, 900px);
-  height: 50vh;
+  height: 70vh;
   position: relative;
 }
 
@@ -83,7 +91,7 @@ const props = defineProps(["id"]);
   right: 0px;
   padding: 1rem;
   border: none;
-  background: #3b444b;
+  background: lightgray;
   font-weight: bold;
 }
 

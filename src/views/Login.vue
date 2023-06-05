@@ -44,27 +44,32 @@ const login = () => {
 <style>
 .comp {
   position: relative;
-  left: 730px;
+  left: 200px;
   color: white;
+  width: 30vw;
 }
+
 .login {
   background-color: black;
   height: 50vh;
   border-radius: 20em;
 }
+
 .login-container {
   position: relative;
   top: 50px;
-  left: 700px;
+  left: 200px;
   row-gap: 10px;
   width: 15%;
   display: flex;
   flex-direction: column;
 }
+
 .username {
   text-align: left;
   border-radius: 5px;
 }
+
 .pass {
   text-align: left;
   border-radius: 5px;

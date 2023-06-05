@@ -17,7 +17,7 @@ const toggleModal = (id) => {
 
 <template>
   <div class="title">
-    <h1>Joes Movies</h1>
+    <h1>Joe's Movies</h1>
   </div>
   <div>
     <div class="cart">
@@ -40,6 +40,9 @@ const toggleModal = (id) => {
   position: relative;
   text-align: center;
   font-size: 15px;
+  padding: 5px;
+  background-color: black;
+  color: white;
 }
 
 button {
@@ -58,8 +61,9 @@ button {
   display: flex;
   justify-content: center;
   height: 50px;
-  left: 620px;
+  width: 95.8vw;
   padding: 7px;
+  background-color: black;
 }
 
 .tiles {

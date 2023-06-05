@@ -31,7 +31,7 @@ img {
   color: whitesmoke;
   grid-template-columns: repeat(5, 1fr);
   left: 100px;
-  background-color: black;;
+  background-color: black;
 }
 
 .top {
