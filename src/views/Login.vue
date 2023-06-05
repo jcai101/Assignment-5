@@ -36,7 +36,7 @@ const login = () => {
         placeholder="Password"
         v-model="password"
       />
-      <input class="ent" type="submit" value="Login" />
+      <input class="loginButton" type="submit" value="Login" />
     </form>
   </div>
 </template>
@@ -45,10 +45,10 @@ const login = () => {
 .comp {
   position: relative;
   left: 730px;
-  color: #22538a;
+  color: white;
 }
 .login {
-  background-color: #acc8e5;
+  background-color: black;
   height: 50vh;
   border-radius: 20em;
 }
@@ -62,15 +62,15 @@ const login = () => {
   flex-direction: column;
 }
 .username {
-  text-align: center;
+  text-align: left;
   border-radius: 5px;
 }
 .pass {
-  text-align: center;
+  text-align: left;
   border-radius: 5px;
 }
-.ent {
-  background-color: #22538a;
+.loginButton {
+  background-color: white;
   text-align: center;
   height: 40px;
   border-radius: 10px;

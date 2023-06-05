@@ -17,7 +17,7 @@ const toggleModal = (id) => {
 
 <template>
   <div class="title">
-    <h1>Soap2Morrow</h1>
+    <h1>Joes Movies</h1>
   </div>
   <div>
     <div class="cart">
@@ -54,9 +54,11 @@ button {
   transition: 0.5s;
 }
 .cart {
+  position: relative;
   display: flex;
   justify-content: center;
   height: 50px;
+  left: 620px;
 
   background-color: rgb(253, 253, 253);
   padding: 7px;

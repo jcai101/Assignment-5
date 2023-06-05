@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import LoginView from "../views/LoginView.vue";
-import PurchaseView from "../views/PurchaseView.vue";
-import CartView from "../views/CartView.vue";
+import HomeView from "../views/Home.vue";
+import LoginView from "../views/Login.vue";
+import PurchaseView from "../views/Purchase.vue";
+import CartView from "../views/Cart.vue";
 
 export const router = createRouter({
   history: createWebHistory(),

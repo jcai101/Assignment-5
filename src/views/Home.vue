@@ -9,7 +9,7 @@ const store = useStore();
 const movies = (
   await axios.get("https://api.themoviedb.org/3/movie/popular", {
     params: {
-      api_key: "f986b47ac3895e05d9614e10bd9e88c0",
+      api_key: "a75766149f058c94cbde1356c3161786",
       region: "US",
       language: "en",
       include_adult: false,

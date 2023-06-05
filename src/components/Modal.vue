@@ -2,19 +2,19 @@
 import axios from "axios";
 import { useStore } from "../store";
 
-const store = useStore();
-const props = defineProps(["id"]);
-
 const movie = (
   await axios.get(`https://api.themoviedb.org/3/movie/${props.id}`, {
     params: {
-      api_key: "f986b47ac3895e05d9614e10bd9e88c0",
+      api_key: "a75766149f058c94cbde1356c3161786",
       region: "US",
       language: "en",
       include_adult: false,
     },
   })
 ).data;
+
+const store = useStore();
+const props = defineProps(["id"]);
 </script>
 
 <template>
@@ -24,7 +24,7 @@ const movie = (
         <button @click="$emit('toggleModal')">X</button>
         <div v-if="movie">
           <img :src="`https://image.tmdb.org/t/p/w500/${movie.poster_path}`" />
-          <div class="tit">
+          <div class="title">
             <h1>{{ movie.title }}</h1>
           </div>
 
@@ -45,7 +45,7 @@ const movie = (
 </template>
 
 <style scoped>
-.tit {
+.title {
   position: relative;
   left: 50%;
 }
